@@ -1,0 +1,5 @@
+numpy
+pandas
+xlsxwriter
+openpyxl
+pytest
