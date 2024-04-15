@@ -382,7 +382,7 @@ def generate_features(
         # Create forecast from optimal sf
         for d in [7, 35]:
             df[f'forecast_{d}_days_y_adj_capped_sf_optimal'] = (
-                    df['forecast_7_days_y_adj_capped'] * df[f'sf_final_{d}_days_y_adj_capped']
+                    df[f'forecast_{d}_days_y_adj_capped'] * df[f'sf_final_{d}_days_y_adj_capped']
             )
 
         dfs.append(df)
